@@ -5,6 +5,10 @@
 ## アプリケーション概要
 * フリーマーケット用のWebアプリです。５人のチームでアジャイル開発を行いました。
 * 作成期間： 2020/8/4 〜 2020/8/26
+### :globe_with_meridians: BASIC認証
+本番環境URL：http://54.95.82.149/
+* user：admin
+* password：password
 * - ![top_page](https://gyazo.com/eefeaf33a0a7cddf32a078460e93b02d/raw)
 
 ## 機能一覧
@@ -43,11 +47,6 @@
 
 ### ■ デプロイ
 * Capistranoによる自動デプロイ
-
-### :globe_with_meridians: BASIC認証
-本番環境URL：http://54.95.82.149/
-* user：admin
-* password：password
 
 ## :globe_with_meridians: インストール方法
 1.このリポジトリを複製<br>
