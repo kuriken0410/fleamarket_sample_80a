@@ -44,6 +44,11 @@
 ### ■ デプロイ
 * Capistranoによる自動デプロイ
 
+* :globe_with_meridians: BASIC認証
+＊ 本番環境URL： http://54.95.82.149/
+* user：admin
+* password：password
+
 ## :globe_with_meridians: インストール方法
 1.このリポジトリを複製<br>
 `$ git clone https://github.com/kuriken0410/fleamarket_sample_80a`
