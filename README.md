@@ -44,8 +44,8 @@
 ### ■ デプロイ
 * Capistranoによる自動デプロイ
 
-# :globe_with_meridians: BASIC認証
-＊ 本番環境URL： http://54.95.82.149/
+### :globe_with_meridians: BASIC認証
+＊ 本番環境URL：http://54.95.82.149/
 * user：admin
 * password：password
 
