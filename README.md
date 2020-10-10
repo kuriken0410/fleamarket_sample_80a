@@ -9,6 +9,18 @@
 本番環境URL：http://54.95.82.149/
 * user：admin
 * password：password
+### :globe_with_meridians: テスト用アカウント等
+購入者用
+メールアドレス: test@test.com
+パスワード: 1234567
+購入用カード情報
+番号： 4242424242424242
+期限： 1/23
+セキュリティコード：123
+出品者用
+メールアドレス名: test100@test.com
+パスワード: 1234567
+
 * - ![top_page](https://gyazo.com/eefeaf33a0a7cddf32a078460e93b02d/raw)
 
 ## 機能一覧
