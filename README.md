@@ -2,6 +2,8 @@
 
 <h1 align="center">フリーマーケットサイト</h1>
 
+* - ![top_page](https://gyazo.com/eefeaf33a0a7cddf32a078460e93b02d/raw)
+
 ## アプリケーション概要
 * フリーマーケット用のWebアプリです。５人のチームでアジャイル開発を行いました。
 * Trelloによるタスク管理
@@ -22,8 +24,6 @@
 #### 出品者用
 * メールアドレス名: test100@test.com
 * パスワード: 1234567
-
-* - ![top_page](https://gyazo.com/eefeaf33a0a7cddf32a078460e93b02d/raw)
 
 ## 機能一覧
 - ユーザー登録、ログイン機能（ウィザード形式）
