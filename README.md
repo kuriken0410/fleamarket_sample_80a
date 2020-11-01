@@ -1,5 +1,3 @@
-# README
-
 <h1 align="center">フリーマーケットサイト</h1>
 
 * - ![top_page](https://gyazo.com/eefeaf33a0a7cddf32a078460e93b02d/raw)
@@ -61,6 +59,12 @@
 
 ### ■ デプロイ
 * Capistranoによる自動デプロイ
+
+### ■ WEBサーバー
+* nginx
+
+### ■ アプリケーションサーバー
+* unicorn
 
 ## :globe_with_meridians: インストール方法
 1.このリポジトリを複製<br>
