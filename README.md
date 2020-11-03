@@ -174,4 +174,4 @@
 <br>
 <br>
 本アプリケーション詳細説明文URL<br>
-:point_right:`https://docs.google.com/document/d/1W3TNL9I-7KhF-XqQWVl77KNbbDBDiExdvmIGWPZ_olU/edit`
+:point_right:https://docs.google.com/document/d/1W3TNL9I-7KhF-XqQWVl77KNbbDBDiExdvmIGWPZ_olU/edit
