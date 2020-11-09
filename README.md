@@ -9,7 +9,7 @@
 * 1日あたりの平均作業時間：10時間
 
 ### BASIC認証
-本番環境URL：http://54.95.82.149/
+本番環境URL：http://54.95.82.149
 * user：admin
 * password：password
 ### テスト用アカウント等
