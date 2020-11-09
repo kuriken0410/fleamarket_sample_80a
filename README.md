@@ -1,10 +1,11 @@
-<h1 align="center">フリーマーケットサイト（FURIMA）</h1>
+<h1 align="center">フリーマーケットアプリ（FURIMA）</h1>
 
 * - ![top_page](https://gyazo.com/eefeaf33a0a7cddf32a078460e93b02d/raw)
 
-## :globe_with_meridians: アプリケーション概要
-* フリーマーケット用のWebアプリです。５人のチームでアジャイル開発を行いました。
-* Trelloによるタスク管理
+## :globe_with_meridians: FURIMAとは
+* フリーマーケット用のWebアプリケーションです。
+* スクラム（5人）によるアジャイル開発を行いました。
+* Trelloによるタスク管理。
 * 作成期間： 2020/8/4 〜 2020/8/26（22日間）
 * 1日あたりの平均作業時間：10時間
 
@@ -26,11 +27,11 @@
 ## :globe_with_meridians: 機能一覧
 - ユーザー登録、ログイン機能（ウィザード形式）
 - ユーザー登録、ログインがお済みでない方も商品の一覧、詳細を閲覧可能です。
-- 商品出品機能（画像や商品カテゴリを含めた複数項目の情報をDBへ登録）
+- 商品出品機能（画像や商品カテゴリを含めた複数項目の情報をデータベースへ登録）
 - 商品購入機能（ユーザーが所持するクレジットカードを用いて商品の購入）
-- クレジットカード登録機能（PayJp）
+- クレジットカード登録機能（PAY.JP）
 
-## :globe_with_meridians: 主な使用技術
+## :globe_with_meridians: 主な使用技術・言語・ツール
 <a><img src="https://user-images.githubusercontent.com/39142850/71774533-1ddf1780-2fb4-11ea-8560-753bed352838.png" width="70px;" /></a> <!-- rubyのロゴ -->
 <a><img src="https://user-images.githubusercontent.com/39142850/71774548-731b2900-2fb4-11ea-99ba-565546c5acb4.png" height="60px;" /></a> <!-- RubyOnRailsのロゴ -->
 <a><img src="https://user-images.githubusercontent.com/39142850/71774618-b32edb80-2fb5-11ea-9050-d5929a49e9a5.png" height="60px;" /></a> <!-- Hamlのロゴ -->
@@ -51,7 +52,7 @@
 * Ruby on Rails 6.0.3.2
 
 ### ■ データベース
-* MySQL 5.6.47
+* MySQL 0.5.3
 
 ### ■ インフラ
 * AWS EC2
@@ -68,19 +69,19 @@
 
 ### ■ コードレビューツール
 * Sider
-* Rubocop
+* Rubocop 0.92.0
 
 ## :globe_with_meridians: インストール方法
 1.このリポジトリを複製<br>
 `$ git clone https://github.com/kuriken0410/fleamarket_sample_80a`
 
 2.インストールしたリポジトリに移動<br>
-`$ cd fleamarket_sample_80a.git`
+`$ cd fleamarket_sample_80a`
 
 3.gemをアプリケーションに適用<br>
 `$ bundle install`<br>
 
-4.DBの作成&反映<br>
+4.データベースの作成&反映<br>
 `$ rails db:create`<br>
 `$ rails db:migrate`<br>
 
@@ -91,7 +92,7 @@
 `$ rails s`<br>
 :point_right:`http://localhost:3000`
 
-# :page_facing_up: DB設計
+## :page_facing_up: データベース設計
 
 ## ER図
 ![Fleamarket_sample_80a](https://user-images.githubusercontent.com/63842526/91152535-09de5680-e6fa-11ea-95e3-b4273edfb7ac.jpg)
