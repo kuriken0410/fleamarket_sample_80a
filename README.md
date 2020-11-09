@@ -2,35 +2,35 @@
 
 * - ![top_page](https://gyazo.com/eefeaf33a0a7cddf32a078460e93b02d/raw)
 
-## アプリケーション概要
+## :globe_with_meridians: アプリケーション概要
 * フリーマーケット用のWebアプリです。５人のチームでアジャイル開発を行いました。
 * Trelloによるタスク管理
 * 作成期間： 2020/8/4 〜 2020/8/26（22日間）
 * 1日あたりの平均作業時間：10時間
 
-### :globe_with_meridians: BASIC認証
+### BASIC認証
 本番環境URL：http://54.95.82.149/
 * user：admin
 * password：password
-### :globe_with_meridians: テスト用アカウント等
+### テスト用アカウント等
 * 購入者用メールアドレス: test@test.com
 * パスワード: 1234567
-#### 購入用カード情報
+### 購入用カード情報
 * 番号： 4242424242424242
 * 期限： 1/23
 * セキュリティコード：123
-#### 出品者用
+### 出品者用
 * メールアドレス名: test100@test.com
 * パスワード: 1234567
 
-## 機能一覧
+## :globe_with_meridians: 機能一覧
 - ユーザー登録、ログイン機能（ウィザード形式）
 - ユーザー登録、ログインがお済みでない方も商品の一覧、詳細を閲覧可能です。
 - 商品出品機能（画像や商品カテゴリを含めた複数項目の情報をDBへ登録）
 - 商品購入機能（ユーザーが所持するクレジットカードを用いて商品の購入）
 - クレジットカード登録機能（PayJp）
 
-## 主な使用技術
+## :globe_with_meridians: 主な使用技術
 <a><img src="https://user-images.githubusercontent.com/39142850/71774533-1ddf1780-2fb4-11ea-8560-753bed352838.png" width="70px;" /></a> <!-- rubyのロゴ -->
 <a><img src="https://user-images.githubusercontent.com/39142850/71774548-731b2900-2fb4-11ea-99ba-565546c5acb4.png" height="60px;" /></a> <!-- RubyOnRailsのロゴ -->
 <a><img src="https://user-images.githubusercontent.com/39142850/71774618-b32edb80-2fb5-11ea-9050-d5929a49e9a5.png" height="60px;" /></a> <!-- Hamlのロゴ -->
