@@ -1,4 +1,4 @@
-<h1 align="center">フリーマーケットサイト</h1>
+<h1 align="center">フリーマーケットサイト（FURIMA）</h1>
 
 * - ![top_page](https://gyazo.com/eefeaf33a0a7cddf32a078460e93b02d/raw)
 
