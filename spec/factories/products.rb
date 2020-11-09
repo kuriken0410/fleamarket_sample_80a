@@ -1,7 +1,7 @@
 FactoryBot.define do
 
   factory :product do
-    name                  {"スニーカー"}
+    name                  { "スニーカー"}
     description           {"ブランドものです"}
     price                 {10000}
     condition             {2}

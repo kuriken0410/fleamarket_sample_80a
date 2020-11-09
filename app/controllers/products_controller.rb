@@ -1,7 +1,7 @@
 class ProductsController < ApplicationController
-  before_action :set_product, only: [:edit, :update, :show]
-  before_action :return_to_top, except: :show
-  before_action :check_collect_user, only: [:edit,:update, :destory]
+  before_action :set_product, :only => [:edit, :update, :show]
+  before_action :return_to_top, :except => :show
+  before_action :check_collect_user, :only => [:edit,:update, :destory]
  
 
   def show
@@ -20,7 +20,7 @@ class ProductsController < ApplicationController
   def create
     @product = Product.new(product_params)
     if params[:product][:images_attributes] && @product.save
-      redirect_to root_path, notice: "商品を出品しました"
+      redirect_to root_path, :notice => "商品を出品しました"
     else
       @product.images.new
       render :new
@@ -33,7 +33,7 @@ class ProductsController < ApplicationController
 
   def update
     if params[:product][:images_attributes] && @product.update(edit_product_params)
-      redirect_to root_path, notice: "商品情報を編集しました"
+      redirect_to root_path, :notice => "商品情報を編集しました"
     else
       render :edit
     end
@@ -43,28 +43,28 @@ class ProductsController < ApplicationController
   def destroy
     @product = Product.find(params[:id])
     if @product.destroy
-      redirect_to root_path, notice: "商品を削除しました"
+      redirect_to root_path, :notice => "商品を削除しました"
     else
       render :show
     end
   end
   
   def mid_category
-    @mid_categories = Category.where(ancestry: params[:big_category_id])
-    render json: @mid_categories
+    @mid_categories = Category.where(:ancestry => params[:big_category_id])
+    render :json => @mid_categories
   end
 
   def small_category
-    @small_categories = Category.where(ancestry: "#{params[:big_category_id]}/#{params[:mid_category_id]}")
-    render json: @small_categories
+    @small_categories = Category.where(:ancestry => "#{params[:big_category_id]}/#{params[:mid_category_id]}")
+    render :json => @small_categories
   end
 
   private
   def product_params
     params.require(:product)
       .permit(:name, :description, :price, :condition, :brand, :send_price,
-              :ship_day, :category_id, :prefecture_id, images_attributes: [:image])
-      .merge(user_id: current_user.id, status: 0)
+              :ship_day, :category_id, :prefecture_id, :images_attributes => [:image])
+      .merge(:user_id => current_user.id, :status => 0)
   end
 
   def set_product
@@ -72,19 +72,19 @@ class ProductsController < ApplicationController
   end
 
   def edit_product_params
-    params.require(:product).permit(:name, :description, :price, :condition, :brand, :send_price, :ship_day, :category_id, :prefecture_id, images_attributes: [:image, :_destroy, :id])
+    params.require(:product).permit(:name, :description, :price, :condition, :brand, :send_price, :ship_day, :category_id, :prefecture_id, :images_attributes => [:image, :_destroy, :id])
   end
 
   def return_to_top
     unless user_signed_in?
-      redirect_to root_path, alert: "ログインしてください"
+      redirect_to root_path, :alert => "ログインしてください"
     end
   end
 
   def check_collect_user
     @product = Product.find(params[:id])
     if @product.user_id != current_user.id
-      redirect_to root_path, alert: "権限がありません"
+      redirect_to root_path, :alert => "権限がありません"
     end
   end
 

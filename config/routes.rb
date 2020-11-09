@@ -9,10 +9,10 @@ Rails.application.routes.draw do
     get "signup", :to => "users/registrations#new"
     get "login", :to => "users/sessions#new"
     get "logout", :to => "users/sessions#destroy"
-    get 'addresses', to: 'users/registrations#new_address'
-    post 'addresses', to: 'users/registrations#create_address'
-    get "edit_address", to: 'users/registrations#edit_address'
-    post 'edit_address', to: "users/registrations#update_address"
+    get 'addresses', :to => 'users/registrations#new_address'
+    post 'addresses', :to => 'users/registrations#create_address'
+    get "edit_address", :to => 'users/registrations#edit_address'
+    post 'edit_address', :to => "users/registrations#update_address"
   end
 
   resources :users do
@@ -23,12 +23,12 @@ Rails.application.routes.draw do
     end
   end
 
-  resources :cards, only: [:index, :new, :create, :destroy] 
+  resources :cards, :only => [:index, :new, :create, :destroy] 
   resources :products do
-    resources :contracts, only: [:new, :create, :show]
+    resources :contracts, :only => [:new, :create, :show]
   end
 
-  get 'products/new/mid_category', to: 'products#mid_category'
-  get 'products/new/small_category', to: 'products#small_category'
+  get 'products/new/mid_category', :to => 'products#mid_category'
+  get 'products/new/small_category', :to => 'products#small_category'
 
 end

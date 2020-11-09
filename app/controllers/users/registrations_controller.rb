@@ -10,7 +10,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
       flash.now[:alert] = @user.errors.full_messages
       render :new and return
     end
-    session["devise.regist_data"] = {user: @user.attributes}
+    session["devise.regist_data"] = { :user => @user.attributes }
     session["devise.regist_data"][:user]["password"] = params[:user][:password]
     @address = @user.build_address
     render :new_address
@@ -41,7 +41,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
   def update_address
     @address = current_user.address
     @address.update(address_params)
-    redirect_to user_path(current_user), notice: "住所情報を編集しました"
+    redirect_to user_path(current_user), :notice => "住所情報を編集しました"
   end
 
 protected
