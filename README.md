@@ -52,20 +52,20 @@
 * Ruby on Rails 6.0.3.2
 
 ### ■ データベース
-* MySQL 0.5.3
+* MySQL 5.6.50
 
 ### ■ インフラ
 * AWS EC2
 * AWS S3
 
 ### ■ デプロイ
-* Capistranoによる自動デプロイ
+* Capistrano(3.14.1)による自動デプロイ
 
 ### ■ WEBサーバー
 * nginx
 
 ### ■ アプリケーションサーバー
-* unicorn
+* unicorn 5.6.0
 
 ### ■ コードレビューツール
 * Sider
