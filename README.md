@@ -113,7 +113,7 @@
 * has_many :products, dependent:delete_all
 * has_one :address,dependent:delete
 
-## addessesテーブル
+## addテーブル
 |Column|Type|Options|
 |:-----:|:--:|:------:|
 |user_id|reference|null:false, foreign_key:true|
