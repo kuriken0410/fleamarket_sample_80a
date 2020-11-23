@@ -115,7 +115,7 @@
 
 ## addテーブル
 |Column|Type|Options|
-|:-----:|:--:|:------:|
+|-----|--|------|
 |user_id|reference|null:false, foreign_key:true|
 |postal_code|string|null:false|
 |prefecture_id|integer|null:false,foreign_key:true|
