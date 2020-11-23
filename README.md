@@ -127,7 +127,7 @@
 
 ## cardsテーブル
 |Column|Type|Options|
-|:-----:|:--:|:------:|
+|-----|--|------|
 |user_id|integer|null:false, foreign_key:true|
 |customer_id|string|null:false|
 |card_id|string|null:false|
@@ -136,7 +136,7 @@
 
 ## productsテーブル
 |Column|Type|Options|
-|:-----:|:--:|:------:|
+|-----|--|------|
 |name|string|null:false|
 |price|integer|null:false|
 |send_price|integer|null:false|
@@ -153,7 +153,7 @@
 
 ## imagesテーブル
 |Column|Type|Options|
-|:-----:|:--:|:------:|
+|-----|--|------|
 |image|string|null:false|
 |product_id|reference|null:false, foreign_key:true|
 ### Associtation
@@ -161,7 +161,7 @@
 
 ## categoriesテーブル
 |Column|Type|Options|
-|:-----:|:--:|:------:|
+|-----|--|------|
 |name|string|null:false|
 |ancestry|string|null: false|
 ### Association
