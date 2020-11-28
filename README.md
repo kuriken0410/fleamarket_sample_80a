@@ -73,7 +73,7 @@
 
 ## :globe_with_meridians: インストール方法
 1.このリポジトリを複製<br>
-`$ git clone https://github.com/kuriken0410/fleamarket_sample_80a`
+`$ git clone https://github.com/kuriken0410/fleamarket_sample_80a.git`
 
 2.インストールしたリポジトリに移動<br>
 `$ cd fleamarket_sample_80a`
