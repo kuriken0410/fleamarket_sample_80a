@@ -1,6 +1,6 @@
 <h1 align="center">フリーマーケットアプリケーション（FURIMA）</h1>
 
-* - ![top_page](https://gyazo.com/eefeaf33a0a7cddf32a078460e93b02d/raw)
+![top_page](https://i.gyazo.com/45613b90ee36532f8d3dfd76dcdd0859.jpg)
 
 ## :globe_with_meridians: FURIMAとは
 * フリーマーケット用のWebアプリケーションです。
